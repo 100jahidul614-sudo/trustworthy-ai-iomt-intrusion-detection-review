@@ -1,0 +1,10 @@
+database,search_date,filters_applied,search_method,records_retrieved,source
+IEEE Xplore,2-4 June 2026,"Publication year; English language; journal articles and conference papers; engineering, cybersecurity, IoT, and AI-related subject areas where available",Database search,244,"Table 2, Sensors 2026, 26, 5182 (CC BY 4.0)"
+Google Scholar,2-4 June 2026,"Publication year intervals; English-language records; title, abstract, keyword, and source-quality relevance screening",Year-by-year relevance-ranked search,4045,"Table 2, Sensors 2026, 26, 5182 (CC BY 4.0)"
+Scopus,5 June 2026,"Publication year; English language; article and conference paper document types; computer science, engineering, and medicine-related subject areas",Database search,64,"Table 2, Sensors 2026, 26, 5182 (CC BY 4.0)"
+Web of Science,5 June 2026,"Publication year; English language; article and proceedings paper document types; computer science, engineering, and healthcare-related categories",Database search,57,"Table 2, Sensors 2026, 26, 5182 (CC BY 4.0)"
+ACM Digital Library,5 June 2026,Publication year; English language; research articles and conference proceedings; computing and cybersecurity-related topics,Database search,185,"Table 2, Sensors 2026, 26, 5182 (CC BY 4.0)"
+ScienceDirect,6-7 June 2026,"Publication year; English language; research articles and review articles; computer science, engineering, and healthcare technology subject areas",Database search,189,"Table 2, Sensors 2026, 26, 5182 (CC BY 4.0)"
+SpringerLink,6-7 June 2026,"Publication year; English language; journal articles and conference papers; computer science, engineering, and healthcare-related fields",Database search,117,"Table 2, Sensors 2026, 26, 5182 (CC BY 4.0)"
+PubMed,6-7 June 2026,"Publication year; English language; biomedical, medical informatics, digital health, and healthcare technology relevance",Database search,226,"Table 2, Sensors 2026, 26, 5182 (CC BY 4.0)"
+Total,,,,5127,"Table 2, Sensors 2026, 26, 5182 (CC BY 4.0)"

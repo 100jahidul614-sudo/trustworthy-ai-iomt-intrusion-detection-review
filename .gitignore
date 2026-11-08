@@ -1,0 +1,30 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Office lock / temporary files
+~$*
+~WRL*.tmp
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Never commit full-text articles, reference-manager databases, raw exports with abstracts, or installers
+*.pdf
+*.ris
+*.enw
+*.nbib
+*.sqlite
+*.sqlite.bak
+*.exe
+*.msi
+*.docx
+*.xlsx
+
+# Not part of this repository
+evidence/original/pubmed_march2026_exploratory_metadata.csv

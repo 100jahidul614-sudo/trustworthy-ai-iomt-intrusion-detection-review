@@ -1,0 +1,5 @@
+quality_score_range,count,interpretation,source
+8-10,20,Strong methodological quality and high relevance to IoMT IDS research,"Table 4, Sensors 2026, 26, 5182 (CC BY 4.0)"
+5-7,4,Moderate methodological quality with clear relevance to healthcare cybersecurity,"Table 4, Sensors 2026, 26, 5182 (CC BY 4.0)"
+0-4,10,Insufficient methodological rigor or relevance; excluded from the primary synthesis,"Table 4, Sensors 2026, 26, 5182 (CC BY 4.0)"
+Total assessed,34,Full-text candidate studies evaluated during quality assessment,"Table 4, Sensors 2026, 26, 5182 (CC BY 4.0)"

@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite the published article listed under preferred-citation."
+title: "Trustworthy AI-Powered Intrusion Detection for the Internet of Medical Things (IoMT): A Review — companion repository"
+type: dataset
+authors:
+  - family-names: Islam
+    given-names: Jahidul
+    affiliation: "Sydney Metropolitan Institute of Technology (SydneyMet)"
+  - family-names: Datta
+    given-names: Dristi
+    affiliation: "Sydney Metropolitan Institute of Technology (SydneyMet)"
+  - family-names: Akhter
+    given-names: Fowzia
+    affiliation: "Sydney Metropolitan Institute of Technology (SydneyMet)"
+keywords:
+  - Internet of Medical Things
+  - intrusion detection systems
+  - artificial intelligence
+  - explainable AI
+  - federated learning
+  - healthcare cybersecurity
+  - PRISMA 2020
+  - structured narrative review
+preferred-citation:
+  type: article
+  title: "Trustworthy AI-Powered Intrusion Detection for the Internet of Medical Things (IoMT): A Review"
+  authors:
+    - family-names: Islam
+      given-names: Jahidul
+    - family-names: Datta
+      given-names: Dristi
+    - family-names: Akhter
+      given-names: Fowzia
+  journal: Sensors
+  volume: 26
+  issue: 16
+  start: 5182
+  year: 2026
+  month: 8
+  date-published: 2026-08-16
+  doi: 10.3390/s26165182
+  url: "https://doi.org/10.3390/s26165182"
+  license: CC-BY-4.0
+  publisher:
+    name: MDPI
