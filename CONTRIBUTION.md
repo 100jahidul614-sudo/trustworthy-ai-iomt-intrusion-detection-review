@@ -6,12 +6,12 @@ This repository accompanies a literature review. No software, model or experimen
 
 Reproduced verbatim from *Sensors* 2026, 26, 5182 (CC BY 4.0):
 
-> Conceptualization, D.D.; methodology, J.I. and D.D.; literature search and screening, J.I. and D.D.; formal analysis, J.I. and D.D.; investigation, J.I. and D.D.; resources, F.A.; data curation, J.I. and D.D.; writing—original draft preparation, J.I. and D.D.; writing—review and editing, J.I., D.D. and F.A.; visualization, J.I. and D.D.; supervision, D.D.; project administration, F.A. All authors have read and agreed to the published version of the manuscript.
+> Conceptualization, D.D.; methodology, J.I.; literature search and screening, J.I.; formal analysis, J.I.; investigation, J.I. and D.D.; resources, F.A.; data curation, J.I. and D.D.; writing—original draft preparation, J.I.; writing—review, D.D. and F.A.; visualization, J.I. and D.D.; supervision, D.D.; project administration, F.A. All authors have read and agreed to the published version of the manuscript.
 
 | Author | Initials | Contribution roles (as published) |
 |---|---|---|
 | Jahidul Islam | J.I. | Methodology; literature search and screening; formal analysis; investigation; data curation; writing (original draft); writing (review and editing); visualization |
-| Dristi Datta | D.D. | Conceptualization; methodology; literature search and screening; formal analysis; investigation; data curation; writing (original draft); writing (review and editing); visualization; supervision |
+| Dristi Datta | D.D. | Conceptualization; investigation; data curation; writing (review and editing); visualization; supervision |
 | Fowzia Akhter (corresponding author) | F.A. | Resources; writing (review and editing); project administration |
 
 Affiliation (as published): Department of Information Technology and Engineering (ITE), Sydney Metropolitan Institute of Technology (SydneyMet), Sydney, NSW 2000, Australia.
