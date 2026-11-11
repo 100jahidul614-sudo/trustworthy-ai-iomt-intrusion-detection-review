@@ -23,7 +23,9 @@ The article describes four sequential stages:
 3. Full-text eligibility assessment.
 4. Structured quality assessment (see [`QUALITY_ASSESSMENT.md`](QUALITY_ASSESSMENT.md)).
 
-The article reports that title and abstract screening was performed by the first author, and that full-text eligibility and quality evaluation were independently verified by the co-authors.
+Figure 1 shows two further steps around these stages: 3,411 duplicates and 6 non-English records were removed before screening, and the 376 reports sought for retrieval underwent an IoMT and RPM relevance screen (291 excluded) before 85 full-text articles were assessed for eligibility.
+
+The article reports that title and abstract screening was initially performed by the first author, that full-text eligibility assessment and methodological quality evaluation were independently verified by the co-authors, and that uncertain cases were resolved through discussion. Partial Zotero screening records are preserved (§3), but no complete contemporaneous record of individual screening decisions or of co-author eligibility discussions is held in the available repository evidence.
 
 **Reported PRISMA counts (Figure 1):**
 
@@ -37,9 +39,11 @@ The article reports that title and abstract screening was performed by the first
 | Excluded after IoMT and RPM relevance screening | 291 |
 | Full-text articles assessed for eligibility | 85 |
 | Excluded after full-text review | 51 |
-| Candidates after full-text screening (quality-assessed) | 34 |
-| Excluded at quality / critical relevance assessment | 10 |
+| Candidate papers after full-text screening | 34 |
+| Reports excluded after critical relevance assessment | 10 |
 | **Studies included** | **24** |
+
+Figure 1 labels the final 10 exclusions as "Reports excluded after critical relevance assessment". Section 2.2 and Table 4 describe the step from 34 to 24 in terms of quality assessment: 10 of the 34 candidates scored below 5 and were excluded, leaving 24 included studies. Both descriptions are given here as published.
 
 The reported counts are internally consistent: each stage equals the previous stage minus its exclusions. A machine-readable transcription is in [`../evidence/published_transcriptions/figure1_prisma_counts.csv`](../evidence/published_transcriptions/figure1_prisma_counts.csv).
 
@@ -60,15 +64,15 @@ The pairings in this table are approximate and show only the nearest available r
 
 | Record | Content | File |
 |---|---|---|
-| Zotero collections (created 3–4 June 2026) | Initial Search **1,357**; Title Screening **67** (with a 9-item "IoMT IDS Candidates" sub-collection); Abstract Screening **52**; Final Papers **31**; Excluded Papers **17**. Zotero records 4,096 merged duplicate items in the library. Every row is labelled `record_status = Historical partial screening record`. | [`zotero_screening_collections.csv`](../evidence/original/zotero_screening_collections.csv) |
+| Zotero collections (created 3–4 June 2026, according to the Zotero library database) | Initial Search **1,357**; Title Screening **67** (with a 9-item "IoMT IDS Candidates" sub-collection); Abstract Screening **52**; Final Papers **31**; Excluded Papers **17**. The original Zotero library database, which is not included in the exported CSVs, records 4,096 merged duplicate items. Every row is labelled `record_status = Historical partial screening record`. | [`zotero_screening_collections.csv`](../evidence/original/zotero_screening_collections.csv) |
 | Zotero export of a 376-item set (4 June 2026) | 376 items, mostly from the Google Scholar and IEEE imports | [`zotero_export_376_metadata.csv`](../evidence/original/zotero_export_376_metadata.csv) |
 
 What these records do and do not show:
 - **Counts:** the Zotero collection counts (1,357 / 67 / 52 / 31) do not correspond to the reported PRISMA stage counts (1,710 / 376 / 85 / 34).
 - **Collection structure:** the collections are not strictly nested. For example, only 9 of the 52 Abstract Screening items are also in Title Screening. Abstract Screening equals Final Papers (31) plus Excluded Papers (17) plus 4 unassigned items.
-- **The 376-item export:** its size matches the reported "reports sought for retrieval" count. However, 367 of its 376 Zotero items were later merged as duplicates, only 5 of its items appear in the Title Screening collection, and it contains 2 of the 24 included studies. It therefore cannot be shown to be the PRISMA stage of that name.
+- **The 376-item export:** its size matches the reported "reports sought for retrieval" count. Matched by Zotero item key, 9 of its items appear in the exported screening collections, and they are exactly the 9 items of the "IoMT IDS Candidates" sub-collection of Title Screening. Four of these rows have blank titles in the collections CSV, which is why matching by title finds only 5. The remaining 367 items do not appear in the exported screening collections; the original Zotero library database records them as merged duplicates. The export contains 2 of the 24 included studies. It therefore cannot be shown to be the PRISMA stage of that name.
 - **Exclusion reasons:** none are recorded, at any stage.
-- **Timing:** the screening collections and the 376-item export were all created by 4 June 2026. The article reports search dates of 5–7 June 2026 for six databases, and the archive contains no record of how records from those databases entered screening.
+- **Timing:** the screening collections (created 3–4 June 2026, according to the Zotero library database) and the 376-item export (exported 4 June 2026) all date from 4 June 2026 or earlier. The article reports search dates of 5–7 June 2026 for six databases, and the archive contains no record of how records from those databases entered screening.
 - **Not held:** the 85 full-text assessments, the list of 34 quality-assessed candidates, and the 10 exclusions.
 
 ## 4. How each included study is documented
