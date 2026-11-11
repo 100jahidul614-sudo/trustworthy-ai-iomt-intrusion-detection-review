@@ -10,8 +10,8 @@ Reproduced verbatim from *Sensors* 2026, 26, 5182 (CC BY 4.0):
 
 | Author | Initials | Contribution roles (as published) |
 |---|---|---|
-| Jahidul Islam | J.I. | Methodology; literature search and screening; formal analysis; investigation; data curation; writing (original draft); writing (review and editing); visualization |
-| Dristi Datta | D.D. | Conceptualization; methodology; literature search and screening; formal analysis; investigation; data curation; writing (original draft); writing (review and editing); visualization; supervision |
+| Jahidul Islam | J.I. | Methodology; literature search and screening; formal analysis; investigation; data curation; writing (original draft); visualization |
+| Dristi Datta | D.D. | Conceptualization; investigation; data curation; writing (review and editing); visualization; supervision |
 | Fowzia Akhter (corresponding author) | F.A. | Resources; writing (review and editing); project administration |
 
 Affiliation (as published): Department of Information Technology and Engineering (ITE), Sydney Metropolitan Institute of Technology (SydneyMet), Sydney, NSW 2000, Australia.
