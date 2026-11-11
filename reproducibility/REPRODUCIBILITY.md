@@ -61,4 +61,3 @@ print(collections.Counter(r["source_file"] for r in rows))   # records per Googl
 ```
 
 The SHA-256 checksums of the source files these derivatives were produced from are in [`../evidence/original/SOURCE_MANIFEST.csv`](../evidence/original/SOURCE_MANIFEST.csv).
-
