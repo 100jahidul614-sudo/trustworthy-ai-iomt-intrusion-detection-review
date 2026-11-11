@@ -1,13 +1,13 @@
 # Search strategy
 
-Source: Section 2.1 and Table 2 of Islam, Datta and Akhter, *Sensors* 2026, 26, 5182 (CC BY 4.0). The status labels in this document mean:
+Source: Sections 2.1 and 5.3 and Table 2 of Islam, Datta and Akhter, *Sensors* 2026, 26, 5182 (CC BY 4.0). The status labels in this document mean:
 
 | Label | Meaning |
 |---|---|
 | **Reported** | Stated in the published article |
 | **Author-confirmed** | Confirmed by the authors for this repository |
 | **Original record** | An original search export is held in the research archive and is provided here as a metadata-only derivative |
-| **Not recoverable** | No original record is held in the local research archive |
+| **Not held** | No original record is held in the local research archive |
 
 ## 1. Scope and search string (reported)
 
@@ -25,7 +25,7 @@ AND ("Healthcare Cybersecurity" OR "Medical Device Security"
      OR "Remote Patient Monitoring" OR "RPM" OR "Healthcare 5.0")
 ```
 
-- **Google Scholar:** searched in overlapping publication-year intervals (2021–2022, 2022–2023, 2023–2024, 2024–2025, 2025–2026). The article reports that "approximately 800 records were screened within each interval according to title relevance, abstract relevance, keyword alignment, source quality, and relevance to AI-powered IoMT intrusion detection before duplicate removal and eligibility assessment."
+- **Google Scholar:** because Google Scholar returns relevance-ranked results and indexes records of varying quality, it was searched in overlapping publication-year intervals (2021–2022, 2022–2023, 2023–2024, 2024–2025, 2025–2026). The article reports that "approximately 800 records were screened within each interval according to title relevance, abstract relevance, keyword alignment, source quality, and relevance to AI-powered IoMT intrusion detection before duplicate removal and eligibility assessment."
 
 ## 2. Retrieval by database and evidence status
 
@@ -33,21 +33,25 @@ AND ("Healthcare Cybersecurity" OR "Medical Device Security"
 |---|---|---|---|---|
 | IEEE Xplore | 2–4 June 2026 | 244 | CSV export, 244 records, file saved 3 June 2026 | **Original record; matches reported count** |
 | Google Scholar | 2–4 June 2026 | 4,045 | Five RIS exports, 4,882 records, files saved 2–3 June 2026 | **Original record; does not reproduce the reported count** (see §3) |
-| Scopus | 5 June 2026 | 64 | none | Reported; author-confirmed; **not recoverable** |
-| Web of Science | 5 June 2026 | 57 | none | Reported; author-confirmed; **not recoverable** |
-| ACM Digital Library | 5 June 2026 | 185 | none | Reported; author-confirmed; **not recoverable** |
-| ScienceDirect | 6–7 June 2026 | 189 | none | Reported; author-confirmed; **not recoverable** |
-| SpringerLink | 6–7 June 2026 | 117 | none | Reported; author-confirmed; **not recoverable** |
-| PubMed | 6–7 June 2026 | 226 | none | Reported; author-confirmed; **not recoverable** |
+| Scopus | 5 June 2026 | 64 | none | Reported; author-confirmed; **not held** |
+| Web of Science | 5 June 2026 | 57 | none | Reported; author-confirmed; **not held** |
+| ACM Digital Library | 5 June 2026 | 185 | none | Reported; author-confirmed; **not held** |
+| ScienceDirect | 6–7 June 2026 | 189 | none | Reported; author-confirmed; **not held** |
+| SpringerLink | 6–7 June 2026 | 117 | none | Reported; author-confirmed; **not held** |
+| PubMed | 6–7 June 2026 | 226 | none | Reported; author-confirmed; **not held** |
 | **Total** | | **5,127** | 5,126 records held (4,882 + 244) | Reported total cannot be re-derived from local records |
+
+The 5,126 held records do not independently confirm the published total of 5,127. The held Google Scholar exports (4,882 records) exceed the reported Google Scholar count (4,045), and no records are held for the six other databases (838 reported records); the closeness of the two totals is therefore coincidental.
 
 The full transcription of published Table 2, including the filters for each database, is in [`../evidence/published_transcriptions/table2_search_strategy.csv`](../evidence/published_transcriptions/table2_search_strategy.csv). The metadata-only derivatives are:
 - [`google_scholar_exports_metadata.csv`](../evidence/original/google_scholar_exports_metadata.csv)
 - [`ieee_xplore_export_metadata.csv`](../evidence/original/ieee_xplore_export_metadata.csv)
 
+The article reports that all retrieved records were imported into Zotero for reference management, duplicate detection and screening. The screening stages are described in [`STUDY_SELECTION.md`](STUDY_SELECTION.md).
+
 ## 3. Google Scholar: reported versus held
 
-| Interval | Reported records | Records in local export | Local file |
+| Interval | Reported records | Records in local export | Local file (original file name, as saved) |
 |---|---|---|---|
 | 2021–2022 | 798 | 900 | `Google scholer 2021-2022.ris` |
 | 2022–2023 | 810 | 997 | `Google scholer 2022-2023.ris` |
@@ -59,9 +63,9 @@ The full transcription of published Table 2, including the filters for each data
 Observations from the local exports:
 - The local window boundaries match the reported intervals.
 - Four of the five local exports sit close to Google Scholar's 1,000-result retrieval limit.
-- Overlapping windows produce substantial cross-window duplication: 300–524 shared titles between adjacent windows.
+- Overlapping windows produce substantial cross-window duplication: 301–529 identical titles are shared between adjacent windows (324, 389, 301 and 529 for the four adjacent pairs; exact title match in `google_scholar_exports_metadata.csv`, calculated for this repository).
 - The reported per-interval counts cannot be reproduced from the local exports by record type, publication year, abstract availability or duplicate removal.
-- The reported figures follow an interval-level relevance screen, and no record of that screen is held. The difference is therefore documented here, not reconciled.
+- The article lists title, abstract, keyword and source-quality relevance screening among the Google Scholar filters (Table 2) and describes screening within each interval (Section 2.1). The reported counts may therefore reflect that interval-level screen, but the archived exports do not record it, so the difference is documented here, not reconciled.
 
 ## 4. Records imported before the review searches
 
@@ -69,4 +73,6 @@ The reference library already contained some items before the June 2026 searches
 
 ## 5. Limitations acknowledged in the article
 
-The article itself notes (Section 5.3) that Google Scholar contributed 4,045 of 5,127 records (79%), retrieved by relevance ranking rather than structured querying. It describes this as a potential selection-bias risk.
+Section 5.3 of the article notes two limitations of the search:
+- The search was restricted to English-language publications from 2021–2026 in eight databases, so relevant studies published outside that period, in other languages or indexed only elsewhere may have been missed.
+- Google Scholar contributed 4,045 of 5,127 records (79%) and was searched in relevance-ranked year intervals rather than with the structured database querying used for the other seven sources. The article identifies this as a potential source of selection bias, partly mitigated by the predefined eligibility criteria, full-text assessment and methodological quality evaluation.
