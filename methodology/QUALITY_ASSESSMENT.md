@@ -77,6 +77,6 @@ Arithmetic checks, run by [`../reproducibility/verify_package.py`](../reproducib
   - The published Table 7 characteristics for [34] (BraTS 2020, Pima and CC-19 datasets; BCFL, HE, SMPC and PBFT) match the full text and original extraction row of Wang et al. (2026).
   - Published Table 6 lists "Wang et al. [34]" under "Federated Learning and Privacy-Preserving IDS" and "Myrzashova et al. [34]" under "Blockchain-Assisted Healthcare Security".
 
-  No local search, screening, extraction or scoring record exists for Myrzashova et al. (2023), and its full text is not held, so its published score could not be independently checked. The value is transcribed exactly as published and flagged. It has not been altered.
+  No local search, screening, extraction or scoring record for Myrzashova et al. (2023) is held in the inspected research archive, and its full text is not held, so its published score could not be independently checked. The value is transcribed exactly as published and flagged. It has not been altered.
 - **Reference [49].** This reference cites a complete proceedings volume, *Machine Learning Algorithms: ICMLA 2024* (editors Khurana et al.). The Zotero screening records hold one chapter from that volume (Goel et al.). It is not stated which item the score assesses.
 - **Labelling.** Table 5 prints "Almotiri et al." for reference [30], which has a single author. The label is transcribed as printed.
