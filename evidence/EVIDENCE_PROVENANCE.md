@@ -1,5 +1,7 @@
 # Evidence provenance
 
+This document describes the evidence assembled into this repository after the article's publication: metadata derived from records preserved in the authors' research archive, transcriptions of the published article, and tables derived from both. Dates given for original files (export or save dates) were taken from the files in the authors' archive and cannot necessarily be validated from the exported repository files.
+
 ## Four categories of information
 
 | Category | What it covers | Where it appears |
@@ -11,7 +13,7 @@
 
 ## File classes
 
-Every data file in this repository belongs to one of four classes:
+The four categories above classify statements by their provenance; the classes below identify the types of data file. Derived tables combine categories 2–4 and mark category-4 values **NOT VERIFIED**; category 1 is documented in `methodology/`. Every data file in this repository belongs to one of the first three classes. The fourth class lists records that are absent, which are therefore not files in this repository:
 
 | Class | Location | Meaning |
 |---|---|---|
@@ -27,17 +29,17 @@ SHA-256 checksums of every source file, record counts and the exact derivation r
 | File | Source in the research archive | Records | Fields kept | Removed |
 |---|---|---|---|---|
 | `google_scholar_exports_metadata.csv` | Five Google Scholar RIS exports, saved 2–3 June 2026 | 4,882 | Year window, RIS type, title, authors, year, source title, publisher, DOI | Abstracts, citation-count notes, URLs |
-| `ieee_xplore_export_metadata.csv` | IEEE Xplore CSV export, 2021–2026, saved 3 June 2026 | 244 | Title, authors, year, publication title, DOI, document type | Abstracts, affiliations, keywords, funding, URLs, licence fields |
-| `zotero_screening_collections.csv` | Zotero library collections: Initial Search, Title Screening, IoMT IDS Candidates, Abstract Screening, Final Papers, Excluded Papers. **Historical, partial screening record; it does not reproduce the published PRISMA flow** (see `methodology/STUDY_SELECTION.md` §3). | 1,533 rows (1,357 / 67 / 9 / 52 / 31 / 17) | `record_status` label (added by this package), collection, Zotero item key, item type, first author, year, title, publication, DOI, catalogue, date added (UTC) | Notes, tags, attachments, file paths, all other library content |
+| `ieee_xplore_export_metadata.csv` | IEEE Xplore CSV export, 2021–2026, saved 3 June 2026 | 244 | Title, authors, year, publication title, DOI, document type (`document_identifier` column) | Abstracts, affiliations, keywords, funding, URLs, licence fields |
+| `zotero_screening_collections.csv` | Zotero library collections: Initial Search, Title Screening, IoMT IDS Candidates, Abstract Screening, Final Papers, Excluded Papers. **Historical, partial screening record; it does not reproduce the published PRISMA flow** (see `methodology/STUDY_SELECTION.md` §3). | 1,533 rows (1,357 / 67 / 9 / 52 / 31 / 17) | `record_status` label (added for this repository), collection, Zotero item key, item type, first author, year, title, publication, DOI, catalogue, date added (UTC) | Notes, tags, attachments, file paths, all other library content |
 | `zotero_export_376_metadata.csv` | Zotero CSV export of a 376-item set, 4 June 2026. Historical record; it cannot be shown to be the PRISMA "376 sought for retrieval" stage. | 376 | Zotero key, item type, title, authors, year, publication, DOI, catalogue, date added | Abstracts, tags, notes, URLs, attachment paths |
-| `extraction_primary_original.csv` | *Final analysis file for all the papers.xlsx*, Sheet2 (last saved 1 July 2026) | 24 | All original columns verbatim, plus two columns added by this package: `publication_status` and `inline_marker_note` | none |
+| `extraction_primary_original.csv` | *Final analysis file for all the papers.xlsx*, Sheet2 (last saved 1 July 2026) | 24 | All original columns verbatim, plus two columns added for this repository: `publication_status` and `inline_marker_note` | none |
 | `extraction_supporting_original.csv` | Same workbook, Sheet1 (supporting literature) | 116 | All columns verbatim | none |
 
 ### Notes on the original extraction matrices
 
 - **Pre-publication snapshot.** Sheet2 records the 24 primary studies as they stood on 1 July 2026. Twenty-one rows match published primary studies (identity confirmed by DOI or title in the local full text). Three rows do not:
-  - Iseal et al. and Titoriya & Prasad Singh were removed from the included set during revision. They were replaced by Ahmed et al. [3] and Areia et al. [50], which have no extraction rows.
-  - The row for Wang et al. (2026) corresponds to the slot that the published article assigns to Myrzashova et al. [34]. That row is **not** copied into any Myrzashova record.
+  - Iseal et al. and Titoriya & Prasad Singh appear in the original extraction matrix but not among the published 24 studies. Conversely, Ahmed et al. [3] and Areia et al. [50] appear in the published set but have no corresponding original extraction rows.
+  - The row for Wang et al. (2026) records a study that is not among the published 24. Published reference [34] is a different study, Myrzashova et al. (2023), whose published Table 5 and Table 7 entries coincide with records of Wang et al. (see [`QUALITY_ASSESSMENT.md` §4](../methodology/QUALITY_ASSESSMENT.md#4-provenance-and-limitations)). The Wang row is reproduced exactly as recorded and is **not** copied into any Myrzashova record.
 - **Supporting sheet.** Sheet1 lists 116 entries, including one author-year label ("Rani et al. (2023)") that appears twice for two different papers. It does not map one-to-one onto the 115 supporting references in the published reference list.
 - **Duplicate workbooks.** *main 24 papers.xlsx* is identical (columns B–I) to Sheet2. *rest 25.xlsx* and *rest 25 (Autosaved).xlsx* each contain 24 rows duplicated from Sheet1. None of these is exported separately.
 - **Verbatim text and inline markers.** Cell text is reproduced exactly as recorded, with no scientific content altered. Three Sheet2 rows contain 39 inline markers of the form `[cite: N]`, with N between 14 and 2,344:
@@ -46,7 +48,7 @@ SHA-256 checksums of every source file, record counts and the exact derivation r
   - Singhal et al., 14 markers, one of them in the citation cell
   
   These markers are retained unaltered and flagged in the `inline_marker_note` column. They are **not references**: they do not resolve to any source in the archive, have not been verified, and their origin is not documented. They should not be read as citations supporting the cell text. The Wang et al. row is not one of the published 24 studies.
-- **Exploratory matrix.** An early exploratory matrix (*IoMT Extended review metrix table.xlsx*, 1–8 June 2026, 8 rows in each of two sheets) is listed in the manifest for completeness. Its text was not used for the published tables and is not exported.
+- **Exploratory matrix.** An early exploratory matrix (*IoMT Extended review metrix table.xlsx*, 1–8 June 2026, 8 rows in each of two sheets) is listed in [`original/SOURCE_MANIFEST.csv`](original/SOURCE_MANIFEST.csv) for completeness. According to the manifest, its text differs from the final extraction text. The workbook is not tracked in this repository, and its content is not exported.
 
 ## Published transcriptions
 
@@ -64,7 +66,7 @@ Transcriptions reproduce the published values exactly, including values flagged 
 
 ## Missing records
 
-These records would be needed to reproduce the reported search and selection, but they are not in the research archive:
+These records would be needed to reproduce the reported workflow, but they are not held in the available research archive:
 
 1. Search exports or search histories for Scopus, Web of Science, ACM Digital Library, ScienceDirect, SpringerLink and PubMed (reported dates 5–7 June 2026; 838 records in total).
 2. Any intermediate file deriving the reported Google Scholar counts (798 / 810 / 817 / 813 / 807; total 4,045) from the exports (4,882 records).
@@ -74,4 +76,6 @@ These records would be needed to reproduce the reported search and selection, bu
 6. Original per-criterion quality scores, reviewer-level scoring and records of co-author verification.
 7. Any search, screening, extraction, scoring or full-text record for Myrzashova et al. (2023) [34]. Its study-specific characteristics are therefore marked NOT VERIFIED in `analysis/comparison_matrix.csv`.
 8. Extraction rows for Ahmed et al. [3] and Areia et al. [50].
-9. Data underlying the qualitative radar-style Figures 4 and 7. The article describes these figures as non-quantitative.
+9. Tabulated rating values for the qualitative radar-style Figures 4 and 7; none are held in the available archive. The article describes these figures as illustrative qualitative syntheses.
+
+Further detail: item 2 in [`SEARCH_STRATEGY.md` §3](../methodology/SEARCH_STRATEGY.md#3-google-scholar-reported-versus-held); items 3–5 in [`STUDY_SELECTION.md` §3](../methodology/STUDY_SELECTION.md#3-original-screening-records-held-in-the-archive-historical-and-partial); items 6–7 in [`QUALITY_ASSESSMENT.md` §4](../methodology/QUALITY_ASSESSMENT.md#4-provenance-and-limitations).
