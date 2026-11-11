@@ -6,7 +6,7 @@ This repository accompanies a literature review. No software, model or experimen
 
 Reproduced verbatim from *Sensors* 2026, 26, 5182 (CC BY 4.0):
 
-> Conceptualization, D.D.; methodology, J.I. and D.D.; literature search and screening, J.I. and D.D.; formal analysis, J.I. and D.D.; investigation, J.I. and D.D.; resources, F.A.; data curation, J.I. and D.D.; writing—original draft preparation, J.I. and D.D.; writing—review and editing, J.I., D.D. and F.A.; visualization, J.I. and D.D.; supervision, D.D.; project administration, F.A. All authors have read and agreed to the published version of the manuscript.
+> Conceptualization, D.D.; methodology, J.I. and D.D.; literature search and screening, J.I. and D.D.; formal analysis, J.I. and D.D.; investigation, J.I. and D.D.; resources, F.A.; data curation, J.I.; writing—original draft preparation,D.D.; writing—review, J.I., D.D. and F.A.; visualization, J.I. and D.D.; supervision, D.D.; project administration, F.A. All authors have read and agreed to the published version of the manuscript.
 
 | Author | Initials | Contribution roles (as published) |
 |---|---|---|
