@@ -3,8 +3,6 @@
 **Jahidul Islam, Dristi Datta and Fowzia Akhter**
 *Sensors* 2026, 26(16), 5182 · Published 16 August 2026 · [doi:10.3390/s26165182](https://doi.org/10.3390/s26165182)
 
-This research investigates how artificial intelligence can improve intrusion detection and cybersecurity in Internet of Medical Things environments, with particular emphasis on trustworthy and clinically deployable security systems.
-
 This is the companion repository to a published **structured narrative review guided by PRISMA 2020**. It documents:
 - the review's methodology
 - its quality-assessment framework
@@ -37,7 +35,7 @@ Its central conclusion is that **deployment readiness, not benchmark accuracy, i
 
 ## Methodology
 
-- **Design:** structured narrative review, reported following PRISMA 2020. Evidence is synthesised qualitatively, with no meta-analysis.
+- **Design:** structured narrative review. PRISMA 2020 guided record identification, screening and reporting. Evidence is synthesised qualitatively, with no meta-analysis.
 - **Search:** eight databases, covering studies published 2021–2026 in English, with a common Boolean search string:
   - IEEE Xplore
   - Google Scholar
@@ -49,8 +47,9 @@ Its central conclusion is that **deployment readiness, not benchmark accuracy, i
   - PubMed
 - **Selection (as reported):**
   - 5,127 records identified
-  - duplicate removal, then title and abstract screening and full-text eligibility assessment
-  - quality assessment of 34 candidates
+  - duplicate removal, then title and abstract screening
+  - full-text eligibility assessment of 85 articles
+  - quality assessment of the 34 studies that passed full-text eligibility
   - **24 primary studies** included, supported by **115 complementary references**
 - **Details:** [`methodology/SEARCH_STRATEGY.md`](methodology/SEARCH_STRATEGY.md) and [`methodology/STUDY_SELECTION.md`](methodology/STUDY_SELECTION.md).
 
@@ -59,7 +58,7 @@ Its central conclusion is that **deployment readiness, not benchmark accuracy, i
 
 ## Quality assessment: five criteria
 
-Each full-text candidate was scored from 0 to 2 on each of five criteria, for a maximum of 10. Studies scoring 5 or more were included.
+Of the 85 full-text articles assessed for eligibility, 34 passed and entered methodological quality assessment. Each of these 34 studies was scored from 0 to 2 on each of five criteria, for a maximum of 10. Studies scoring 5 or more were included.
 
 | | Criterion |
 |---|---|
@@ -89,8 +88,8 @@ See [`methodology/SIX_DIMENSION_FRAMEWORK.md`](methodology/SIX_DIMENSION_FRAMEWO
 
 ## Main findings
 
-- **Detection capability has advanced quickly.** Recent gains come mainly from integrating architectures, not from new learning algorithms.
-- **Other dimensions have lagged.** Progress in explainability, privacy-preserving collaboration, efficiency, benchmarking consistency and generalisation has not kept pace with detection capability. This explains why strong benchmark results seldom translate into deployable systems.
+- **Detection capability has advanced quickly.** Recent advances are increasingly driven by architectural integration rather than by entirely new learning algorithms.
+- **Other dimensions have lagged.** Progress in explainability, privacy-preserving collaboration, efficiency, benchmarking consistency and generalisation has not kept pace with detection capability. This helps explain why strong benchmark results seldom translate into deployable systems.
 - **Collaborative approaches are promising but constrained.** Federated Learning and blockchain complement each other, but non-IID data, communication overhead, poisoning attacks and consensus latency limit them.
 
 ## Deployment challenges
@@ -130,6 +129,8 @@ See also [`CITATION.cff`](CITATION.cff) and the published author contributions i
 ## Repository contents
 
 ```text
+CONTRIBUTION.md              Published author contributions, funding, data availability and declarations
+CITATION.cff                 Citation metadata for the published article
 methodology/                 Search strategy, study selection, quality assessment, six-dimension framework
 analysis/                    The 24 primary studies, published quality scores, comparison matrix
 evidence/original/           Metadata-only derivatives of original search and (partial) screening records,
@@ -139,22 +140,15 @@ evidence/published_transcriptions/
 evidence/EVIDENCE_PROVENANCE.md
                              Source, checksum and derivation of every evidence file
 figures/                     Figures 1 and 5 of the article (CC BY 4.0)
+figures/FIGURE_SOURCES.md    Source, licence and captions of the reproduced figures
 reproducibility/             Reproducibility scope and a consistency-check script
 ```
 
 ## Reproducibility scope
 
-This repository supports **inspection and consistency checking**. It does **not** support complete reproduction of the review workflow:
+This repository supports **inspection and consistency checking**, not complete reproduction of the review workflow. [`reproducibility/verify_package.py`](reproducibility/verify_package.py) checks the arithmetic and internal consistency of the published counts, quality scores and study tables. It also compares the reported counts with the original Google Scholar and IEEE Xplore exports and the historical, partial Zotero screening records; the original extraction matrices are provided for inspection. The full 5,127-record search, the published PRISMA stages and the original per-criterion scores cannot be recomputed from these records, and fields that could not be independently checked are marked **NOT VERIFIED**.
 
-- **Transcriptions.** The included studies, quality scores and study characteristics are transcribed from the published article. Their arithmetic and internal consistency can be checked with [`reproducibility/verify_package.py`](reproducibility/verify_package.py).
-- **Partial original records.** Some original records are available as metadata only:
-  - the Google Scholar and IEEE Xplore search exports
-  - historical, partial Zotero screening records
-  - the original extraction matrices
-- **Records that are not available.** The full 5,127-record search and the published PRISMA stages cannot be recomputed from the records available here. Original per-criterion scoring sheets are also not available.
-- **Fields not verified.** Some study-level fields could not be independently verified. They are marked **NOT VERIFIED**.
-
-For details, see [`reproducibility/REPRODUCIBILITY.md`](reproducibility/REPRODUCIBILITY.md) and [`evidence/EVIDENCE_PROVENANCE.md`](evidence/EVIDENCE_PROVENANCE.md). Full-text articles and database abstracts are not redistributed.
+See [`reproducibility/REPRODUCIBILITY.md`](reproducibility/REPRODUCIBILITY.md) for what can and cannot be verified, and [`evidence/EVIDENCE_PROVENANCE.md`](evidence/EVIDENCE_PROVENANCE.md) for the source of each evidence file. Full-text articles and database abstracts are not redistributed.
 
 ## Licence
 
