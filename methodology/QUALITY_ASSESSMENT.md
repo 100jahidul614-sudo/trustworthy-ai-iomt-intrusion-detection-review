@@ -1,6 +1,6 @@
 # Methodological quality assessment
 
-Source: Section 2.2 and Tables 4–5 of *Sensors* 2026, 26, 5182 (CC BY 4.0).
+Source: Section 2.2 and Tables 4–5 of *Sensors* 2026, 26, 5182 (CC BY 4.0); for reference [34], also Tables 6–7 and the reference list.
 
 ## 1. Framework (reported)
 
@@ -16,7 +16,7 @@ Quality assessment was the final selection stage. It was applied to the 34 candi
 
 - **Scoring:** 0 = insufficient evidence; 1 = partial fulfilment; 2 = strong fulfilment.
 - **Maximum score:** 10.
-- **Inclusion threshold:** a total of **5 or higher**. Studies scoring below 5 were excluded.
+- **Inclusion threshold:** a total of **5 or higher**. Studies scoring below 5 were excluded for insufficient methodological rigour, limited technical relevance or inadequate experimental reporting.
 
 ## 2. Reported distribution (Table 4)
 
@@ -24,7 +24,7 @@ Quality assessment was the final selection stage. It was applied to the 34 candi
 |---|---|---|
 | 8–10 | 20 | Strong methodological quality and high relevance to IoMT IDS research |
 | 5–7 | 4 | Moderate methodological quality with clear relevance to healthcare cybersecurity |
-| 0–4 | 10 | Insufficient rigor or relevance; excluded from the primary synthesis |
+| 0–4 | 10 | Insufficient methodological rigor or relevance; excluded from the primary synthesis |
 | **Total assessed** | **34** | |
 
 The article explains that the high concentration of scores reflects the sequential selection process: only studies that had already passed relevance and full-text screening were scored.
@@ -69,12 +69,13 @@ Arithmetic checks, run by [`../reproducibility/verify_package.py`](../reproducib
 
 ## 4. Provenance and limitations
 
-- **Original scoring records.** No original per-criterion scoring worksheet, reviewer-level record or record of co-author verification is held in the research archive. None of the original extraction workbooks, the Zotero library (notes and tags) or the pre-revision manuscript drafts contains study-level quality scores. The scores presented here therefore rest on the published article alone.
+- **Original scoring records.** No original per-criterion scoring worksheet, reviewer-level scoring record or record of co-author verification is held in the inspected research archive. Study-level scores are present in Table 5 of the pre-publication revised manuscript and of the published article. These manuscript tables report assessment outcomes but are not substitutes for original scoring records. The revised manuscript labels the study at reference [34] as Wang et al. (2026), whereas the published Table 5 labels it Myrzashova et al. (2023) (see below). The scores presented here are transcribed from the published article.
 - **Excluded candidates.** The 10 candidates excluded at quality assessment, and their scores, are not recorded in the archive and are not listed here.
-- **Reference [34]: Myrzashova et al. (2023), final included study.** The authors confirm that this study replaced an earlier candidate, Wang et al. (2026), in the final selection. Its published score of 9 is transcribed in `quality_scores.csv` as a published value, marked **NOT VERIFIED**. In `analysis/comparison_matrix.csv` all of its study-specific characteristics are marked **NOT VERIFIED**; the published Table 7 entries are kept unchanged only in the Table 7 transcription. Three points are noted:
-  - The published Table 5 scores for [34] (2-2-2-1-2 = 9) are identical to the scores attributed to "Wang et al. [34] (2026)" in pre-publication manuscripts.
+- **Reference [34]: Myrzashova et al. (2023), final included study.** The authors confirm that this study replaced an earlier candidate, Wang et al. (2026), in the final selection. Its published score of 9 is transcribed in `quality_scores.csv` as a published value, marked **NOT VERIFIED**. In `analysis/comparison_matrix.csv` all of its study-specific characteristics are marked **NOT VERIFIED**; the published Table 7 entries are kept unchanged only in the Table 7 transcription. The following points are noted:
+  - The published reference-list entry [34] is Myrzashova et al. (2023), *IEEE Internet of Things Journal*, and published Table 5 identifies [34] as Myrzashova et al. (2023).
+  - Table 5 of the pre-publication revised manuscript identifies [34] as Wang et al. (2026), with the same scores (2-2-2-1-2 = 9) as published for Myrzashova et al.
   - The published Table 7 characteristics for [34] (BraTS 2020, Pima and CC-19 datasets; BCFL, HE, SMPC and PBFT) match the full text and original extraction row of Wang et al. (2026).
-  - Published Table 6 lists both "Wang et al. [34]" and "Myrzashova et al. [34]".
+  - Published Table 6 lists "Wang et al. [34]" under "Federated Learning and Privacy-Preserving IDS" and "Myrzashova et al. [34]" under "Blockchain-Assisted Healthcare Security".
 
   No local search, screening, extraction or scoring record exists for Myrzashova et al. (2023), and its full text is not held, so its published score could not be independently checked. The value is transcribed exactly as published and flagged. It has not been altered.
 - **Reference [49].** This reference cites a complete proceedings volume, *Machine Learning Algorithms: ICMLA 2024* (editors Khurana et al.). The Zotero screening records hold one chapter from that volume (Goel et al.). It is not stated which item the score assesses.
